@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import '../style/variable.scss';
+@import '../style/mixin.scss';
+
+
 h1{
-  color: red;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@include desktop {
+  h1{
+    color: green;
+  }
+}
+
+@include tablet {
+  h1{
+    color: red;
+  }
+}
+
+@include mobile {
+  h1{
+    color: blue;
+  }
 }
