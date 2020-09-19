@@ -1,0 +1,49 @@
+.header{
+  background-color: $background;
+  display: flex;
+  justify-content: space-between;
+
+  &__logoContent{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo{
+    width: 45%;
+  }
+
+  &__menuburger{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60px;
+    border-left: 1px solid $main-color;
+  }
+}
+
+.menuburger{
+    width: 40px;
+    height: 2px;
+    background: $main-color;
+  }
+
+.menuburger::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: $main-color;
+    top: 20px;
+  }
+
+.menuburger::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2.5px;
+    background: $main-color;
+    bottom: 20px;
+  }
