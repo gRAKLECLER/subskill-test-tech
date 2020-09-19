@@ -2,9 +2,26 @@
 @import '../style/variable.scss';
 @import '../style/mixin.scss';
 @import '../style/header.scss';
-@import '../style/head.scss';
-@import '../style/reset.scss';
 @import '../style/nav.scss';
+@import '../style/head.scss';
+@import '../style/exhibitor.scss';
+@import '../style/category.scss';
+@import '../style/footer.scss';
+@import '../style/reset.scss';
+
+
+
+@include mobile{
+  section{
+    margin-bottom: 20px;
+  }
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 p, li{
@@ -16,4 +33,25 @@ p, li{
 hr{
   margin-top: -10px;
   width: 20%;
+}
+
+.mainTitle{
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.mainTitle__title{
+  font-size: $main-title;
+}
+
+.mainTitle__circle{
+  position: absolute;
+  z-index: -1;
+  left: -50px;
+  top: -25px;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: $squareShape-color;
 }
