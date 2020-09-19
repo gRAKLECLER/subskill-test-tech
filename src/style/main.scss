@@ -4,8 +4,16 @@
 @import '../style/header.scss';
 @import '../style/head.scss';
 @import '../style/reset.scss';
+@import '../style/nav.scss';
 
 
-p{
+p, li{
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+hr{
+  margin-top: -10px;
+  width: 20%;
 }

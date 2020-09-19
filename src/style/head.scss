@@ -1,6 +1,7 @@
 .head{
   width: 100vw;
   height: 100vh;
+  
 
   h2{
     font-size: $main-text;
@@ -43,9 +44,22 @@
 
   &__arrows{
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
     background-color: #f1f2f6 ;
+
+    &--left{
+      &:hover{
+        background-color: #c9cacc  ;
+      }
+    }
+
+    &--right{
+      display: flex;
+      justify-content: flex-end;
+      &:hover{
+        background-color: #c9cacc  ;
+      }
+    }
   }
 }
 
@@ -57,9 +71,11 @@
 
 .arrow{
   padding: 1rem;
-  width: 10%;
+  width: 15%;
+}
 
-  &:nth-child(1){
-    transform: rotate(180deg);
-  }
+.arrow--left{
+  padding: 1rem;
+  width: 15%;
+  transform: rotate(180deg);
 }

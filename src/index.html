@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/style/main.scss">
+  <script defer src="../src/script/main.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -11,8 +12,29 @@
     <div class="header__logoContent">
       <img class="header__logo" src="../src/assets/svg/logo.svg" alt="le carrousel du louvre">
     </div>
-    <div class="header__menuburger">
+    <div class="header__menuburger" id="menuBurger">
       <div class="menuburger"></div>
+    </div>
+    <div class="nav" id="nav">
+      <nav class="nav__container">
+        <img class="close" id="close" src="../src/assets/svg/cancel.svg" alt="fermer">
+        <ul class="nav__links">
+          <img src="../src/assets/svg/logo.svg" alt="le carrousel du louvre">
+          <li>OEUVRES</li>
+          <hr>
+          <li>EXPOSANTS</li>
+          <hr>
+          <li>RDV VIRTUEL</li>
+          <hr>
+          <li>FINEARTS-PARIS.FR</li>
+          <hr>
+          <li>INFORMATIONS PRATIQUES</li>
+          <hr>
+          <li>INFORMATIONS PRATIQUES</li>
+          <hr>
+          <li>MA LISTE</li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
@@ -28,8 +50,12 @@
             <img class="heart" src="../src/assets/svg/heart.svg" alt="coeur">
           </div>
           <div class="head__arrows">
-            <img class="arrow" src="../src/assets/svg/right-arrow.svg" alt="">
-            <img class="arrow" src="../src/assets/svg/right-arrow.svg" alt="">
+            <div class="head__arrows--left">
+              <img class="arrow--left" src="../src/assets/svg/right-arrow.svg" alt="">
+            </div>
+            <div class="head__arrows--right">
+              <img class="arrow" src="../src/assets/svg/right-arrow.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
