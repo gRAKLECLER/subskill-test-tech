@@ -8,6 +8,8 @@ const $rightArrow = document.getElementById('rightArrow');
 const $headContent = document.querySelectorAll('.head__content')
 console.log($headContent)
 
+console.log(window.screen.width)
+
 $rightArrow.addEventListener('click', () => {
   $headContent.forEach(element => {
     return element.classList.add('up')
