@@ -1,6 +1,18 @@
 .head{
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
+
+  @include mobile {
+    height: 75vh;
+  }
+
+  @include tablet {
+    height: 90vh;
+  }
+
+  @include desktop {
+    height: 100vh;
+  }
 
   h2{
     font-size: $main-text;

@@ -5,12 +5,24 @@
   background-color: $background;
   transition: opacity 0.3s ease-in-out;
 
+  @include desktop{
+    display: block;
+    z-index: 10;
+  }
+
   &__container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      height: 10vh;
+    }
   }
+
 
   &__links{
     display: flex;
@@ -18,10 +30,31 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  
+
+    @include desktop{
+      width: 100%;
+      flex-direction: row;
+      align-items: stretch;
+    }
 
     a{
       text-decoration: none;
       color: $main-color;
+
+      @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        padding: 1rem;
+      }
+    }
+
+    @include desktop {
+      li{
+        font-size: 10px;
+      }
     }
   }
 
@@ -29,6 +62,10 @@
     display: block;
     height: 100vh;
     z-index: 9999;
+
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -37,4 +74,16 @@
   width: 10%;
   top: 20px;
   right: 30px;
+}
+
+@include tablet {
+  .close{
+    width: 40px;
+  }
+}
+
+@include desktop {
+  .close{
+    display: none;
+  }
 }
