@@ -1,130 +1,115 @@
 .head{
   width: 100vw;
-  height: 65vh;
+  height: 70%;
 
-  @include mobile {
-    height: 75vh;
+  @include desktop{
+    margin-top: 10vh;
   }
-
-  @include tablet {
-    height: 90vh;
-  }
-
-  @include desktop {
-    height: 100vh;
-  }
-
-  h2{
-    font-size: $main-text;
-  }
-
-  p{
-    font-size: $text;
-  }
-
+  
+  
   &__container{
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
-  &__mainContainer{
-    position: relative;
-  }
-
-  &__mainImg{
+  &__pic1{
     width: 100%;
-    object-fit: contain;
+  }
+
+  &__contentFirst{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+
+    @include tablet {
+      order: 0;
+    }
   }
 
   &__content{
-    position: absolute;
     width: 100%;
-    margin-top: -2px;
+    height: 5%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    &--first{
-      z-index: 1;
-    }
-
-    &--second{
-      z-index: 0;
-    }
-
-    &--third{
-      z-index: -1;
-    }
   }
 
-  &__contentText{
+  &__texts{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
     background-color: $main-color;
     color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
   }
 
   &__text{
-    width: 90%;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 0.3rem;
   }
 
-  &__arrows{
-    position: absolute;
+  &__actions{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+
+  &__contentSecond{
     display: flex;
     width: 100%;
-    background-color: #f1f2f6 ;
-    top: 300px;
+    order: 0;
 
-
-    &--left{
-      @include desktop {
-        &:hover{
-          background-color: #c9cacc;
-        }
-      }
-      &:active{
-        background-color: #a6a6a7;
-      }
+    @include tablet {
+      width: 44%;
+      order: 2;
+      flex-direction: column;
     }
 
-    &--right{
-      display: flex;
-      justify-content: flex-end;
-
-      @include desktop {
-        &:hover{
-          background-color: #c9cacc;
-        }
-      }
-      &:active{
-        background-color: #a6a6a7;
-      }
+    @include desktop {
+      width: 40%;
     }
   }
-}
 
-.up{
-  z-index: 2;
+  &__pic{
+    object-fit: cover;
+    width: 35%;
+    border-right: 1px solid #ffffff;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
 }
 
 .heart{
-  width: 25px;
-  padding: 1rem;
-  border-left: 1px solid #f1f2f6;
+  width: 5%;
+
+  @include mobile {
+    width: 8%;
+  }
 }
 
+.arrows {
+  width: 10%;
 
-.arrow{
-  padding: 1rem;
-  width: 15%;
-}
+  &--left{
+    transform: rotate(180deg);
+  }
 
-.arrow--left{
-  padding: 1rem;
-  width: 15%;
-  transform: rotate(180deg);
+  @include mobile {
+    width: 15%;
+  }
 }
