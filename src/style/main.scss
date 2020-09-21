@@ -39,12 +39,13 @@ p, li{
 .mainTitle{
   position: relative;
   z-index: 2;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 5%;
 }
 
 .mainTitle__title{
   font-size: $main-title;
+  font-weight: 800;
 }
 
 .mainTitle__circle{

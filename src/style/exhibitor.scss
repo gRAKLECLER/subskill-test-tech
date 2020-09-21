@@ -12,18 +12,19 @@
     position: absolute;
     width: 100%; 
     height: 100%;
-    right: -90px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     overflow-x: scroll;
+    right: 0;
     
     &::-webkit-scrollbar {
       display: none;
     }
 
     @include big-desktop {
-      width: 80%;
+      width: 90%;
+      right: 0;
     }
   }
 
@@ -51,12 +52,29 @@
     border: none;
     color: #ffffff;
     background-color: $main-color;
-    margin-top: 20px;
-    bottom: 0;
+    bottom: 0px;
   }
 }
 
 .arrowDiscover{
   width: 20px;
   margin-left: 10px;
+}
+
+.rectangle__exhibitor{
+  position: absolute;
+  right: -110px;
+  top: 30%;
+  width: 90%;
+  height: 403px;
+  background-color: #F1F2F6;
+
+  
+  @include tablet{
+    width: 85%;
+  }
+
+  @include mobile{
+    display: none;
+  }
 }
