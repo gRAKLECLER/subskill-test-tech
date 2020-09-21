@@ -1,6 +1,7 @@
 .head{
   width: 100vw;
   height: 70%;
+  overflow: hidden;
 
   @include desktop{
     margin-top: 10vh;

@@ -21,7 +21,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
 }
 
 
@@ -30,11 +29,6 @@ p, li{
   font-weight: 400;
   font-size: 12px;
 }
-
-// hr{
-//   margin-top: -10px;
-//   width: 20%;
-// }
 
 .mainTitle{
   position: relative;

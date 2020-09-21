@@ -4,10 +4,17 @@
   width: 100vw;
   background-color: $background;
   transition: opacity 0.3s ease-in-out;
+  padding: 1rem;
 
   @include desktop{
     display: block;
     z-index: 10;
+  }
+
+  @include desktop{
+    &__logo{
+      width: 75%;
+    }
   }
 
   &__container{
@@ -84,6 +91,13 @@
 
 @include desktop {
   .close{
+    display: none;
+  }
+}
+
+
+@include desktop{
+  hr:nth-child(7){
     display: none;
   }
 }
